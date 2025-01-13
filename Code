@@ -1,0 +1,21 @@
+
+package deneme;
+
+import java.util.Scanner;
+
+public class Fibonacci {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int sayi, i, s1 = 0, s2 = 1, toplam;
+        System.out.println("sayiyi girin!:");
+        sayi = input.nextInt();
+        for (i = 0; i <= sayi; i++) {
+            toplam = s1 + s2;
+            s1 = s2;
+            s2 = toplam;
+            System.out.print(s1 + " , ");
+        }
+
+    }
+}
